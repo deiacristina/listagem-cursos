@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel-container {
+    width: 80%;
+    padding: 20px;
+    border-radius: 15px;
+    transition: all 0.4s;
+    overflow: hidden;
+  }
+
+  .carousel-container::-webkit-scrollbar{
+    background-color: rgb(252, 252, 252);
+  }
+
+   .carousel-container::-webkit-scrollbar-thumb{
+    background-color: rgb(163, 163, 163);
+    border-radius: 50px;
+    
+  }
+
+  .carousel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .title {
+    color: #093366;
+    font: normal 32px Inter, sans-serif;
+    font-weight: 900;
+    white-space: nowrap;
+  }
+  
+  .icons {
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+
+  .left {
+    margin-right: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+
+  .left:hover {
+    transform: scale(1.1);
+    
+  } 
+  .right{
+    margin-right: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+
+  .right:hover {
+    transform: scale(1.1);
+    
+  } 
+  .container-itens {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 3rem;
+  }
+  
+  .item {
+    padding: 1rem;
+    box-shadow: 0 0 9px 0px #00000052;
+    width: 100%;
+    transition: top 0.3s;
+    animation: .7s ease-out 0s 1 slideInFromLeft forwards;
+  }
+  
+  .item:hover{
+    cursor: pointer;
+    position: relative;
+    animation: efeito 5s ;
+
+  }
+  
+  .p {
+    font: normal 16px Inter, sans-serif;
+    font-weight: 700;
+    line-height: 18px;
+    white-space: nowrap;
+    color: #093366;
+    margin: 1rem 0;
+  }
+
+  hr {
+    background-color: #f1f1f1f2;
+    width: 100%;
+    border: solid 1px rgba(255, 255, 255, 0.067) ;
+    margin-bottom: 30px;
+  }
+  
+  .h4 {
+    font: normal 16px Inter, sans-serif;
+    font-weight: 700;
+    line-height: 18px;
+    color: #bec8d8;
+    margin-left: 30px;
+  }
+
+
+ @keyframes efeito {
+  from {bottom: 4px;}
+  to {top: 0px;}
+ }
+
+  @media (max-width: 700px) {
+    .title {
+      font-size: 17pt;
+    }
+    .icons img{
+      width: 25px;
+      height: 25px;
+    }
+    .container-itens {
+      flex-wrap: wrap;
+    }
+    .item {
+      padding: 1rem;
+      box-shadow: 0 0 9px 0px #00000052;
+      width: 80%;
+      transition: top 0.3s;
+      animation: .7s ease-out 0s 1 slideInFromLeft forwards;
+    }
+    .p {
+      font: normal 15px Inter, sans-serif;
+      font-weight: 700;
+      line-height: 16px;
+      white-space: nowrap;
+      color: #093366;
+      margin: 1rem 0;
+    }
+    .h4 {
+      font: normal 16px Inter, sans-serif;
+      height: 35px;
+      font-weight: 700;
+      line-height: 18px;
+      color: #bec8d8;
+      margin-left: 30px;
+    }
+  }
+  
